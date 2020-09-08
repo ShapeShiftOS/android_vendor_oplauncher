@@ -7,13 +7,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     OnePlusRecentsProvider \
     OPLauncher2 \
-    OPIconpackCircle1 \
     OPIconpackDefault1 \
+    OPWeather1 \
+    OPWidget1	
+	
+# OP Apps
+ifneq ($(TARGET_OP_APPS),false)
+PRODUCT_PACKAGES += \
+    OPIconpackCircle1 \
     OPIconpackHydrogen1 \
     OPIconpackMCLaren1 \
     OPIconpackOnePlus1 \
     OPIconpackOxygen1 \
     OPIconpackSquare1 \
-    OPWeather1 \
-    OPWidget1
-
+endif
